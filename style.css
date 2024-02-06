@@ -1,0 +1,320 @@
+@font-face {
+    font-family: Finnmark;
+    src: url(Finnmark/TTF/Finnmark-Regular.ttf);
+}
+
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url(Download\ \ 295\ Helvetica\ Fonts/);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Beginning of Navigation Bar CSS */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navBar  {
+    width: 95%;
+    margin: 0% auto;
+}
+
+header {
+    background-color: #B7C9C9;
+    font-family: Finnmark;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.logo {
+    float: left;
+    padding: 4px 0;
+    height: 15%;
+    width: 15%;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 15px;
+
+    position: relative;
+
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #3b3b3b;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #000000;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all 200ms ease-in-out;
+}
+
+nav a::hover::before {
+    width: 100%;
+}
+
+/* Beginning of About Me Section CSS */
+
+
+.homepageSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.main{
+   font-family: Finnmark;
+   width: 100%;
+   margin: 0% auto;
+   text-align: left; 
+   box-shadow: 0px 4px 7px rgba(0, 0, 0, .5);
+}
+
+ /*
+.homepageSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.main{
+   font-family: Finnmark;
+   width: 95%;
+   margin: 0% auto;
+   text-align: left; 
+   box-shadow: 0 4px 7px rgba(0, 0, 0, .5);
+
+
+.aboutMe {
+    margin: 100px auto;
+    width: 75%;
+}
+
+#headshot {
+        float: left;
+        margin-right: 40px;
+        padding-top: 100px;
+        margin-left: 200px;
+}
+*/
+
+
+.aboutMesection{
+    font-family: Finnmark;
+    height: 450px;
+    width: 100%;
+    margin: 0px 150px 0px 50px;
+}
+
+#aboutMeh1 {
+    font-size: 32px;
+}
+
+#headshot{
+    margin-left: 150px;
+}
+
+#smileyFace{
+    margin-left: 25px;
+}
+
+/*
+#aboutMetext img{
+    float: right;
+}
+*/  
+
+.aboutMep{
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#scroll {
+    font-family: Helvetica;
+    font-size: 15px;
+    vertical-align: bottom;
+    margin: 100px;
+}
+
+.fa-solid fa-arrow-down-long{
+    padding-left: 20px;
+}
+
+#downarrow{
+    padding-left: 20px !important;
+}
+
+/* Beginning of Work Section in CSS */
+
+.workSection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: 20px;
+}
+ 
+#pawprintpartners {
+    margin: 0px 35px 100px 100px !important;
+}
+
+#openbooks {
+    margin: 0px 35px 100px 100px !important;
+}
+
+#header{
+    font-family: Finnmark;
+    font-size: 32px;
+    margin: 0px 0px 50px 0px;
+ }
+
+#description{
+    margin-right: 150px;
+}
+
+#readMore{
+    font-family: Finnmark;
+    font-size: 20px;
+}
+
+
+/* Beginning of Footer CSS */
+
+
+.footer{
+    background-color: #B7C9C9;
+    font-family: Finnmark;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+    height: 150px;
+}
+
+
+#getintouch {
+    font-size: 35px;
+    padding-left: 50px;
+    padding-right: 10px;
+    float: left;
+    width: auto;
+    margin: auto;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
+
+#email{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#envelope{
+    padding-right: 10px;
+}
+
+#resume{
+    margin: 0px 0px 0px 30px;
+}
+
+#copyright{
+    margin: 0px 0px 0px 325px;
+}
+
+.footer h2{
+    font-family: Helvetica;
+    font-weight:lighter;
+    width: auto;
+    margin: auto;
+    font-size: 18px;
+}
+
+.footer p{
+    float: right;
+    width: auto;
+    margin: auto;
+    font-size: 15px;
+}
+
+.footer button{
+    font-family: Helvetica;
+    font-size: 15px;
+    background-color: #000000;
+    color: #B7C9C9;
+    padding: 7px 20px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+
+/*
+.homepageSection {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 85vh;
+}
+
+.footer{
+    background-color: #B7C9C9;
+    font-family: Finnmark;
+    width: 95%;
+    margin: 0% auto;
+    text-align: center;
+}
+
+.footer h1{
+    font-size: 35px;
+}
+
+#@{
+    font-family: Helvetica;
+    font-weight: lighter;
+}
