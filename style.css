@@ -72,7 +72,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #3b3b3b;
+    color: #617B7B;
 }
 
 nav a::before{
@@ -206,11 +206,17 @@ nav a::hover::before {
 #header{
     font-family: Finnmark;
     font-size: 32px;
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 25px 0px;
  }
 
 #description{
     margin-right: 150px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 10px; /* Gap between images */
 }
 
 #readMore{
@@ -260,6 +266,22 @@ nav a::hover::before {
 #resume{
     margin: 0px 0px 0px 30px;
 }
+
+#resume {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Hover effect */
+#resume:hover {
+    background-color: #617B7B;
+}
+
 
 #copyright{
     margin: 0px 0px 0px 325px;
