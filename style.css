@@ -225,6 +225,7 @@ nav a::hover::before {
 }
 
 
+
 /* Beginning of Footer CSS */
 
 
@@ -277,11 +278,11 @@ nav a::hover::before {
     transition: background-color 0.3s ease; /* Smooth transition effect */
 }
 
-/* Hover effect */
+/* Hover effect 
 #resume:hover {
     background-color: #617B7B;
 }
-
+*/
 
 #copyright{
     margin: 0px 0px 0px 325px;
